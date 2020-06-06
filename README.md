@@ -1,4 +1,4 @@
-# spye-cms
+# SPYE SHOW
 
 ## Project setup
 ```
