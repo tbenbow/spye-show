@@ -45,8 +45,7 @@ Project
 # API GET CALLS
 
 ## Home
-- url: /
-- sample
+url: /
 ```
   "projects": {
     "byId" : {
@@ -66,8 +65,7 @@ Project
 
 
 ## Layout
-- url: /layout/
-- sample
+url: /layout/
 ```
   "layout": {
     "id": "layout1",
@@ -96,8 +94,7 @@ Project
 
 
 ## Project
-- url: /project/
-- sample
+url: /project/
 ```
   "project": {
     "name": "Project Name",
@@ -121,8 +118,7 @@ Project
 
 
 ## Slide Details
-- url: "/slide/1"
-- Sample
+url: "/slide/1"
 ```
   "slide1": {
     "id": "slide1",
@@ -151,8 +147,7 @@ Project
 
 
 ## Block Details
-- url: "/block/1"
-- Sample
+url: "/block/1"
 ```
   "block1": {
     "id": "block1",
