@@ -47,7 +47,8 @@ Project
 ## Home
 - url: /
 - sample
-  `"projects": {
+```
+  "projects": {
     "byId" : {
       "project1" : {
         "id" : "project1",
@@ -60,13 +61,15 @@ Project
       ...
     },
     "allIds: ["project1", "project2", ...]
-  },`
+  },
+```
 
 
 ## Layout
 - url: /layout/
 - sample
-  `"layout": {
+```
+  "layout": {
     "id": "layout1",
     "width": 3320,
     "height": 1280,
@@ -88,13 +91,15 @@ Project
       ...
     ],
     "css": "body { font-family: 'Avenir'; color: #FFFFFF; } h1 { font-size: 65px; }"
-  },`
+  },
+```
 
 
 ## Project
 - url: /project/
 - sample
-  `"project": {
+```
+  "project": {
     "name": "Project Name",
     "layout": "layout1",
     "slides": {
@@ -111,13 +116,15 @@ Project
       },
       "allIds": ["slide1", "slide2", ...]
     },
-  }`
+  }
+```
 
 
 ## Slide Details
 - url: "/slide/1"
 - Sample
-  `"slide1": {
+```
+  "slide1": {
     "id": "slide1",
     "name": "Slide 1",
     "duration": 90,
@@ -139,13 +146,15 @@ Project
       },
       "allIds": ["block1", "block2", ...]
     },
-  },`
+  }
+```
 
 
 ## Block Details
 - url: "/block/1"
 - Sample
-  `"block1": {
+```
+  "block1": {
     "id": "block1",
     "name": "Block 1",
     "template": "html",
@@ -158,13 +167,15 @@ Project
       "h3": "This is a second sub-title"
     },
     "content": "<p>This is some html content.</p>"
-  }`
+  }
+```
 
 
 ## Full Project
 We will need a call that loads the full project for the frontend and preview functionality.
 
-`"project1": {
+```
+"project1": {
   "id": "project1",
   "name": "Project Name",
   "slideOrder": ["slide1", "slide2", ...],
@@ -234,8 +245,8 @@ We will need a call that loads the full project for the frontend and preview fun
     ],
     "css": "body { font-family: 'Avenir'; color: #FFFFFF; } h1 { font-size: 65px; }"
   },
-}`
-
+}
+```
 
 
 # API POST CALLS
@@ -244,28 +255,34 @@ We will need a call that loads the full project for the frontend and preview fun
 ## Project
 
 Create
-`{
+```
+{
   name: "Project 1"
-}`
+}
+```
 
 Update
-`{
+```
+{
   "id": "project1"
   "name": "Project 1",
   "slideOrder: ["slide1", "slide2", ...]
-}`
+}
+```
 
 Delete
-`{
+```
+{
   id: "project1"
-}`
-
+}
+```
 
 ## Layout
 Layout cannot be created or deleted it should be setup with defaults on project creation.
 
 Update
-`{
+```
+{
   "width": 3320,
   "height": 1280,
   "css": "body { font-family: 'Avenir'; color: #FFFFFF; } h1 { font-size: 65px; }",
@@ -284,18 +301,22 @@ Update
     },
     ...
   ],
-}`
+}
+```
 
 
 ## Slide Details
 
 Create
-`{
+```
+{
   "name": "Slide 1"
-}`
+}
+```
 
 Update
-`{
+```
+{
   "id": "slide1",
   "name": "Slide 1",
   "duration": 90,
@@ -304,23 +325,29 @@ Update
   "bgImage": null,
   "bgColor": null,
   "blocks": ["block1", "block2", ...]
-}`
+}
+```
 
 Delete
-`{
+```
+{
   "id": "slide1"
-}`
+}
+```
 
 
 ## Block Details
 
 Create
-`{
+```
+{
   "name": "Block 1",
-}`
+}
+```
 
 Update
-`{
+```
+{
   "id": "block1",
   "name": "Block 1",
   "template": "html",
@@ -333,9 +360,12 @@ Update
     "h3": "This is a second sub-title"
   },
   "content": "<p>This is some html content.</p>"
-}`
+}
+```
 
 Delete
-`{
+```
+{
   "id": "block1"
-}`
+}
+```
