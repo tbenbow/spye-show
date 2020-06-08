@@ -114,4 +114,10 @@ section {
 }
 
 
+@media only screen and (max-width: 600px) {
+  #app {
+    grid-template-columns: 100% 0;
+  }
+}
+
 </style>

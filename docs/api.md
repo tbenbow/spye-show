@@ -118,7 +118,7 @@ url: /project/
 
 
 ## Slide Details
-url: "/slide/1"
+url: /slide/1
 ```
   "slide1": {
     "id": "slide1",
@@ -147,7 +147,7 @@ url: "/slide/1"
 
 
 ## Block Details
-url: "/block/1"
+url: /block/1
 ```
   "block1": {
     "id": "block1",
