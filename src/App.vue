@@ -115,6 +115,9 @@ section {
 
 
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
   #app {
     grid-template-columns: 100% 0;
   }

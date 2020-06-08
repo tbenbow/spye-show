@@ -118,4 +118,10 @@ export default {
     transition: transform .3s ease-in-out;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    overflow-y: auto;
+  }
+}
 </style>
